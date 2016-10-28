@@ -7,7 +7,12 @@ new Vue({
     event: { title: '', detail: '', date: '' },
     events: []
   },
-
+  http:{
+    options: {
+      emulateJSON: false,
+      emulateHTTP: true,
+    }
+  },
   ready: function () {
     this.fetchEvents();
   },
